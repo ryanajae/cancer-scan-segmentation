@@ -1,0 +1,33 @@
+<StartWindow>
+	name: "start"
+
+	numScans : numScans
+    sortScans : sorty
+    searchScans : searchy
+    exitButton : exit
+    listedScans : display
+
+    BoxLayout:
+    	orientation: 'vertical'
+    	ScrollView:
+		    do_scroll_x: False
+		    do_scroll_y: True
+		    Label:
+		    	id : display
+		        size_hint_y: None
+		        height: self.texture_size[1]
+		        text: ""
+    	Label:
+    		text: 'Enter a number to view that scan: '
+    	TextInput:
+    		id : numScans
+    	Button:
+    		text: 'Sort Scans'
+    		id : sorty
+    	Button:
+    		text: 'Search Scans'
+    		id : searchy
+    	Button:
+    		text: 'Exit'
+    		id : exit
+    		on_press: root.CloseProgram()
