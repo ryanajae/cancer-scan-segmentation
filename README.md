@@ -3,4 +3,6 @@ Code for 3D modeling solid tumors from different cancers. Includes interactive U
 
 Put any scans of interest in the LGG Scans folder
 
-When scrolling through images in the GUI, use the J and K keys to move up and down the stack.
+Barebone GUI in Kivy
+Buggy ListScans - may need to populate Grid Layout with labels as opposed to one string, ToDo
+Implement first function of thresholding (more pages, integrate with backend), ToDo
